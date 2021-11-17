@@ -1,17 +1,15 @@
 <template>
   <div class="hello">
-    <router-link to="/login">Nav to login</router-link>
-    <h1>{{ msg }}</h1>
-    <h1>hELLLLO</h1>
+    <h1>ABOUT US</h1>
+    <router-link :to="{name: 'Login'}">Nav to login</router-link>
   </div>
 </template>
 
 <script>
-
-
+// import Vue from "vue";
 
 export default {
-  name: 'HelloWorld',
+  name:'ContactUs',
   props: {
     msg: String
   }
