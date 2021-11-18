@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-    <h1>THIS IS FOOTER</h1>
     <router-link to="/contactus">Contact Us</router-link>
   </div>
 </template>

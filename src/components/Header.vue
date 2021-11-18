@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-    <h1>THIS IS HEADER</h1>
     <router-link to="/login">Login</router-link>
     <router-link to="/contactus">Contact Us</router-link>
     <router-link to="/">Home</router-link>

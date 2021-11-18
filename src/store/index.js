@@ -25,43 +25,45 @@ export default new Vuex.Store({
             },
             {
                 id: 4,
+                title: "A cat",
+                date: "September 3, 2021 14.01",
+                text: "This is a cat.",
+                image: require('./assets/cat.jpg'),
+                alt: "cat"
+            },
+            {
+                id: 5,
                 date: "September 2, 2021 12.00",
                 text: "My leg hurts."
             },
             {
-                id: 5,
+                id: 6,
                 title: "dolorem eum magni eos aperiam quia",
                 date: "September 1, 2021 18.45",
                 text: "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae",
             },
             {
-                id: 6,
+                id: 7,
                 title: "magnam facilis autem",
                 date: "September 1, 2021 18.00",
                 text: "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas",
             },
             {
-                id: 7,
+                id: 8,
                 date: "August 29, 2021 15.33",
                 text: "Today I saw a cloud looking like a potato.",
             },
             {
-                id: 8,
+                id: 9,
                 title: "optio molestias id quia eum",
                 date: "August 14, 2021 16.55",
                 text: "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error",
             },
             {
-                id: 9,
+                id: 10,
                 title: "nesciunt iure omnis dolorem tempora et accusantium",
                 date: "August 10, 2021 15.33",
                 text: "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas",
-            },
-            {
-                id: 10,
-                title: "dolorem dolore est ipsam",
-                date: "August 2, 2021 14.01",
-                text: "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae\n",
             }
         ]
     }
