@@ -1,8 +1,7 @@
 <template>
   <div class="hello">
-    <router-link to="/login">Nav to login</router-link>
-    <h1>{{ msg }}</h1>
     <h1>hELLLLO</h1>
+    <post />
   </div>
 </template>
 
@@ -10,13 +9,16 @@
 
 
 
+import Post from "@/components/Post";
 export default {
   name: 'HelloWorld',
+  components: {Post},
   props: {
     msg: String
   }
 }
 </script>
+
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>

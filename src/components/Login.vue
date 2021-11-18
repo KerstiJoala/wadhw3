@@ -1,12 +1,16 @@
 <template>
   <div class="login">
-    <img src="res/images/postit.png" alt="logo" width="70" height="70" id="logo">
+    <img :src="require('/src/assets/postit.png')" alt="logo" width="70" height="70" id="logo">
     <h1>Welcome to PostIt!</h1>
     <a href="">Create an Account</a>
     <h2>or</h2>
     <h2>Please Log In</h2>
-    <input type="text"  placeholder=" Email" name ="email"/><br>
-    <input type="password" placeholderv=" Password" name="password"/> <br>
+    <label>
+      <input type="text"  placeholder=" Email" name ="email"/>
+    </label><br>
+    <label>
+      <input type="password" placeholder=" Password" name="password"/>
+    </label> <br>
     <button onclick="document.location='index.html'">Log In</button> <br>
     <a href="" id="forgot">Forgot your password?</a>
     <p>    </p>
@@ -14,8 +18,6 @@
 </template>
 
 <script>
-// import Vue from "vue";
-
 const router = require("@/router");
 export default {
   name: 'Login',
@@ -24,8 +26,6 @@ export default {
       router.push({name: 'Login'})
     }
   }
-  // props: {
-  // }
 }
 </script>
 

@@ -1,7 +1,10 @@
 <template>
   <div class="hello">
-    <h1>ABOUT US</h1>
-    <router-link :to="{name: 'Login'}">Nav to login</router-link>
+    <h1>CONTACT US</h1>
+    <h3>Team Members OÜ</h3>
+    <p> TEL: +372 555-1212 </p>
+    <p> EMAIL: wad@wadwad.wad </p>
+    <p> ADDRESS: Pudeli 17, 50111 Tartu, Estonia </p>
   </div>
 </template>
 
