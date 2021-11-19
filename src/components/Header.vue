@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
-    <router-link to="/login">Login</router-link>
-    <router-link to="/contactus">Contact Us</router-link>
+    <router-link to="/login">Login</router-link> |
+    <router-link to="/contactus">Contact Us</router-link> |
     <router-link to="/">Home</router-link>
   </div>
 </template>
@@ -19,6 +19,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.hello {
+  width: 50%;
+  margin: auto;
+  align-items: center;
+}
+
 h3 {
   margin: 40px 0 0;
 }
@@ -32,5 +38,8 @@ li {
 }
 a {
   color: #42b983;
+}
+#app {
+  text-align: center;
 }
 </style>
