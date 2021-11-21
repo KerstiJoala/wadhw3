@@ -2,7 +2,7 @@
   <div class="hello">
     <router-link to="/login">Login</router-link> |
     <router-link to="/contactus">Contact Us</router-link> |
-    <router-link to="/">Home</router-link>
+    <router-link to="/">Home</router-link> |
   </div>
 </template>
 
@@ -11,6 +11,7 @@
 
 export default {
   name:'header',
+  components: {},
   props: {
     msg: String
   }

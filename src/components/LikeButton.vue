@@ -8,7 +8,7 @@
                 height="30"
             />
         </button>
-        <p>This post has been liked {{ count }} times.</p>
+        <p>This post has been liked {{ post.likes }} times.</p>
     </div>
 </template>
 
@@ -21,6 +21,12 @@
     return {
       count: 0
     };
+  },
+
+  computed: {
+    postList() {
+      return this.$store.state.postList;
+    },
   },
 
 };
