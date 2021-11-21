@@ -14,7 +14,8 @@
         <p class="text">{{ post.text }}</p>
         <img :src="post.image" alt="postPic" v-if="post.image" width="700" />
         <br><br>
-
+        
+        <br>
         <div>
         Like this post: <button id="close-image" v-on:click="post.likes++">
             <img

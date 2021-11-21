@@ -21,11 +21,13 @@
       count: 0
     };
   },
+
   computed: {
     postList() {
       return this.$store.state.postList;
     },
   },
+
 };
 
 </script>
