@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
     <h1>Hello, world!</h1>
+    <reset-likes-button></reset-likes-button>
+    <br>
     <post />
   </div>
 </template>
@@ -10,13 +12,18 @@
 
 
 import Post from "@/components/Post";
+import ResetLikesButton from './ResetLikesButton.vue';
 export default {
   name: 'HelloWorld',
-  components: {Post},
+  components: {Post, ResetLikesButton},
   props: {
     msg: String
-  }
-}
+  },
+  methods: {
+    resetLikes: function() {
+    this.$store.commit("resetLikes")
+ }
+}};
 </script>
 
 
@@ -24,6 +31,9 @@ export default {
 <style scoped>
 h3 {
   margin: 40px 0 0;
+}
+h1 {
+  margin-left: 3.1%;
 }
 ul {
   list-style-type: none;
@@ -37,3 +47,9 @@ a {
   color: #42b983;
 }
 </style>
+
+<style>
+.hello{
+  padding-left: 3%;
+}
+</style>>

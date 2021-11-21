@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <router-link to="/contactus">Contact Us</router-link>
+    <p><router-link to="/contactus">Contact Us</router-link> @WAD 2021</p>
   </div>
 </template>
 
@@ -28,7 +28,11 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
-a {
+a,p {
   color: #42b983;
+}
+div {
+  margin-bottom: 3%;
+  margin-top: 5%;
 }
 </style>

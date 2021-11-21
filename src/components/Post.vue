@@ -8,23 +8,34 @@
           width="30"
           height="30"
         />
-        <br>
+        <br><br>
         <span class="date"> {{ post.date }}</span>
         <h3 class="title">{{ post.title }}</h3>
         <p class="text">{{ post.text }}</p>
         <img :src="post.image" alt="postPic" v-if="post.image" width="700" />
-        <br>
-        <LikeButton></LikeButton>
+        <br><br>
+
+        <div>
+        Like this post: <button id="close-image" v-on:click="post.likes++">
+            <img
+                :src="require('/src/assets/like-button-black.png')"
+                alt="like"
+                width="30"
+                height="30"
+            />
+        </button>
+        <p>This post has been liked {{ post.likes }} times.</p>
+        </div>
+        
       </li>
     </ul>
   </div>
 </template>
 
 <script>
-  import LikeButton from './LikeButton.vue';
 
   export default {
-  components: {LikeButton},
+  components: {},
   name: "post",
   data: function () {
     return {};
@@ -46,6 +57,7 @@
   text-align: center;
   color: black;
   margin-bottom: 150px;
+  padding-bottom: 75px;
 }
 
 .post{

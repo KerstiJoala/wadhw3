@@ -11,6 +11,7 @@
 
 export default {
   name:'header',
+  components: {},
   props: {
     msg: String
   }
@@ -41,5 +42,9 @@ a {
 }
 #app {
   text-align: center;
+}
+div {
+  padding-bottom: 3%;
+  color: gray;
 }
 </style>
